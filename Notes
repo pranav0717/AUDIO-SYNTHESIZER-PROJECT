@@ -1,0 +1,3 @@
+Open the main project wizard (.qpf file) in Quartus;
+substitute target score in folder Scores, replacing the file named "output.mif" with outputs from our customized helper tool, then recompile;
+open Eclipse, flash the software onto chip, and click "Run";
