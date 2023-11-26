@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;auidogen_rhythmgame/sgtl5000_test.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;sgtl5000_test.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sgtl5000_test.c" name="main.c" stamp="1682522454845" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;auidogen_rhythmgame/main.c&apos; to &apos;sgtl5000_test.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main.c" name="sgtl5000_test.c" stamp="1682522478319" updateReferences="true"/>
+</session>

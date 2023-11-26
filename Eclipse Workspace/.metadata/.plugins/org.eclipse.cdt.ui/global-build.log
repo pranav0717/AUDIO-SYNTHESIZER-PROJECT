@@ -1,0 +1,114 @@
+13:54:34 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+13:54:48 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+13:54:50 **** Build of configuration Nios II for project space_jam_bsp ****
+make all 
+[BSP build complete]
+13:55:04 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+13:55:36 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+13:58:44 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+14:01:43 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+14:02:28 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+14:07:05 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+16:38:20 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+18:23:39 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+18:23:40 **** Incremental Build of configuration Nios II for project space_jam_bsp ****
+make all 
+[BSP build complete]
+18:24:01 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:38:35 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:38:37 **** Incremental Build of configuration Nios II for project space_jam_bsp ****
+make all 
+[BSP build complete]
+12:40:50 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:42:17 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:55:39 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:56:55 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]
+12:56:57 **** Incremental Build of configuration Nios II for project space_jam_bsp ****
+make all 
+[BSP build complete]
+12:57:23 **** Incremental Build of configuration Nios II for project space_jam ****
+make all 
+Info: Building ../space_jam_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_jam_bsp/
+[BSP build complete]
+[space_jam build complete]

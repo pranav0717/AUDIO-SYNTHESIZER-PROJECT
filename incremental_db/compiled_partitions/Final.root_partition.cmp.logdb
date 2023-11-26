@@ -1,0 +1,6 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Phase_OSC:OSC_0|lpm_mult:Mult0|mult_dms:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Phase_OSC:OSC_1|lpm_mult:Mult0|mult_dms:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Phase_OSC:OSC_3|lpm_mult:Mult0|mult_dms:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Phase_OSC:OSC_2|lpm_mult:Mult0|mult_dms:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,Phase_OSC:OSC_0|lpm_mult:Mult0|mult_dms:auto_generated|mac_mult1,

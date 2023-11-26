@@ -1,0 +1,76 @@
+--lpm_decode CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="MAX 10" LPM_DECODES=9 LPM_WIDTH=4 data eq
+--VERSION_BEGIN 18.1 cbx_cycloneii 2018:09:12:13:04:24:SJ cbx_lpm_add_sub 2018:09:12:13:04:24:SJ cbx_lpm_compare 2018:09:12:13:04:24:SJ cbx_lpm_decode 2018:09:12:13:04:24:SJ cbx_mgl 2018:09:12:13:10:36:SJ cbx_nadder 2018:09:12:13:04:24:SJ cbx_stratix 2018:09:12:13:04:24:SJ cbx_stratixii 2018:09:12:13:04:24:SJ  VERSION_END
+
+
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the applicable agreement for further details.
+
+
+
+--synthesis_resources = lut 16 
+SUBDESIGN decode_cj9
+( 
+	data[3..0]	:	input;
+	eq[8..0]	:	output;
+) 
+VARIABLE 
+	data_wire[2..0]	: WIRE;
+	enable_wire1	: WIRE;
+	enable_wire2	: WIRE;
+	eq_node[8..0]	: WIRE;
+	eq_wire1w[7..0]	: WIRE;
+	eq_wire2w[7..0]	: WIRE;
+	w_anode100w[3..0]	: WIRE;
+	w_anode110w[3..0]	: WIRE;
+	w_anode120w[3..0]	: WIRE;
+	w_anode130w[3..0]	: WIRE;
+	w_anode140w[3..0]	: WIRE;
+	w_anode150w[3..0]	: WIRE;
+	w_anode161w[3..0]	: WIRE;
+	w_anode171w[3..0]	: WIRE;
+	w_anode181w[3..0]	: WIRE;
+	w_anode191w[3..0]	: WIRE;
+	w_anode201w[3..0]	: WIRE;
+	w_anode211w[3..0]	: WIRE;
+	w_anode221w[3..0]	: WIRE;
+	w_anode63w[3..0]	: WIRE;
+	w_anode80w[3..0]	: WIRE;
+	w_anode90w[3..0]	: WIRE;
+
+BEGIN 
+	data_wire[2..0] = data[2..0];
+	enable_wire1 = (! data[3..3]);
+	enable_wire2 = data[3..3];
+	eq[] = eq_node[];
+	eq_node[] = ( eq_wire2w[0..0], eq_wire1w[]);
+	eq_wire1w[] = ( w_anode140w[3..3], w_anode130w[3..3], w_anode120w[3..3], w_anode110w[3..3], w_anode100w[3..3], w_anode90w[3..3], w_anode80w[3..3], w_anode63w[3..3]);
+	eq_wire2w[] = ( w_anode221w[3..3], w_anode211w[3..3], w_anode201w[3..3], w_anode191w[3..3], w_anode181w[3..3], w_anode171w[3..3], w_anode161w[3..3], w_anode150w[3..3]);
+	w_anode100w[] = ( (w_anode100w[2..2] & (! data_wire[2..2])), (w_anode100w[1..1] & data_wire[1..1]), (w_anode100w[0..0] & data_wire[0..0]), enable_wire1);
+	w_anode110w[] = ( (w_anode110w[2..2] & data_wire[2..2]), (w_anode110w[1..1] & (! data_wire[1..1])), (w_anode110w[0..0] & (! data_wire[0..0])), enable_wire1);
+	w_anode120w[] = ( (w_anode120w[2..2] & data_wire[2..2]), (w_anode120w[1..1] & (! data_wire[1..1])), (w_anode120w[0..0] & data_wire[0..0]), enable_wire1);
+	w_anode130w[] = ( (w_anode130w[2..2] & data_wire[2..2]), (w_anode130w[1..1] & data_wire[1..1]), (w_anode130w[0..0] & (! data_wire[0..0])), enable_wire1);
+	w_anode140w[] = ( (w_anode140w[2..2] & data_wire[2..2]), (w_anode140w[1..1] & data_wire[1..1]), (w_anode140w[0..0] & data_wire[0..0]), enable_wire1);
+	w_anode150w[] = ( (w_anode150w[2..2] & (! data_wire[2..2])), (w_anode150w[1..1] & (! data_wire[1..1])), (w_anode150w[0..0] & (! data_wire[0..0])), enable_wire2);
+	w_anode161w[] = ( (w_anode161w[2..2] & (! data_wire[2..2])), (w_anode161w[1..1] & (! data_wire[1..1])), (w_anode161w[0..0] & data_wire[0..0]), enable_wire2);
+	w_anode171w[] = ( (w_anode171w[2..2] & (! data_wire[2..2])), (w_anode171w[1..1] & data_wire[1..1]), (w_anode171w[0..0] & (! data_wire[0..0])), enable_wire2);
+	w_anode181w[] = ( (w_anode181w[2..2] & (! data_wire[2..2])), (w_anode181w[1..1] & data_wire[1..1]), (w_anode181w[0..0] & data_wire[0..0]), enable_wire2);
+	w_anode191w[] = ( (w_anode191w[2..2] & data_wire[2..2]), (w_anode191w[1..1] & (! data_wire[1..1])), (w_anode191w[0..0] & (! data_wire[0..0])), enable_wire2);
+	w_anode201w[] = ( (w_anode201w[2..2] & data_wire[2..2]), (w_anode201w[1..1] & (! data_wire[1..1])), (w_anode201w[0..0] & data_wire[0..0]), enable_wire2);
+	w_anode211w[] = ( (w_anode211w[2..2] & data_wire[2..2]), (w_anode211w[1..1] & data_wire[1..1]), (w_anode211w[0..0] & (! data_wire[0..0])), enable_wire2);
+	w_anode221w[] = ( (w_anode221w[2..2] & data_wire[2..2]), (w_anode221w[1..1] & data_wire[1..1]), (w_anode221w[0..0] & data_wire[0..0]), enable_wire2);
+	w_anode63w[] = ( (w_anode63w[2..2] & (! data_wire[2..2])), (w_anode63w[1..1] & (! data_wire[1..1])), (w_anode63w[0..0] & (! data_wire[0..0])), enable_wire1);
+	w_anode80w[] = ( (w_anode80w[2..2] & (! data_wire[2..2])), (w_anode80w[1..1] & (! data_wire[1..1])), (w_anode80w[0..0] & data_wire[0..0]), enable_wire1);
+	w_anode90w[] = ( (w_anode90w[2..2] & (! data_wire[2..2])), (w_anode90w[1..1] & data_wire[1..1]), (w_anode90w[0..0] & (! data_wire[0..0])), enable_wire1);
+END;
+--VALID FILE

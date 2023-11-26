@@ -1,0 +1,50 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst finalsoc.sysid_qsys_0 -pg 1 -lvl 5 -y 990
+preplace inst finalsoc.nios2_gen2_0.reset_bridge -pg 1
+preplace inst finalsoc.nios2_gen2_0.clock_bridge -pg 1
+preplace inst finalsoc.nios2_gen2_0.cpu -pg 1
+preplace inst finalsoc.clk_0 -pg 1 -lvl 1 -y 830
+preplace inst finalsoc.timer_0 -pg 1 -lvl 5 -y 790
+preplace inst finalsoc.usb_rst -pg 1 -lvl 5 -y 1470
+preplace inst finalsoc.usb_gpx -pg 1 -lvl 5 -y 1270
+preplace inst finalsoc.keycode -pg 1 -lvl 5 -y 1570
+preplace inst finalsoc.spi_0 -pg 1 -lvl 5 -y 340
+preplace inst finalsoc.keyvol_0 -pg 1 -lvl 3 -y 390
+preplace inst finalsoc.jtag_uart_0 -pg 1 -lvl 5 -y 690
+preplace inst finalsoc.i2c_0 -pg 1 -lvl 5 -y 220
+preplace inst finalsoc.keyvol_1 -pg 1 -lvl 3 -y 490
+preplace inst finalsoc.usb_irq -pg 1 -lvl 5 -y 1370
+preplace inst finalsoc.sdram_pll -pg 1 -lvl 5 -y 40
+preplace inst finalsoc.keyvol_2 -pg 1 -lvl 3 -y 590
+preplace inst finalsoc.leds_pio -pg 1 -lvl 5 -y 1170
+preplace inst finalsoc.keyvol_3 -pg 1 -lvl 3 -y 730
+preplace inst finalsoc.hex_digits_pio -pg 1 -lvl 5 -y 890
+preplace inst finalsoc.nios2_gen2_0 -pg 1 -lvl 2 -y 680
+preplace inst finalsoc.sdram -pg 1 -lvl 5 -y 120
+preplace inst finalsoc.key -pg 1 -lvl 5 -y 1070
+preplace inst finalsoc -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.keyvol_0,(SLAVE)keyvol_0.external_connection) 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.leds,(SLAVE)leds_pio.external_connection) 1 0 5 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.i2c_export,(SLAVE)i2c_0.i2c_serial) 1 0 5 NJ 290 NJ 290 NJ 290 NJ 290 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.usb_rst,(SLAVE)usb_rst.external_connection) 1 0 5 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)finalsoc.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.keycode,(SLAVE)keycode.external_connection) 1 0 5 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)usb_gpx.external_connection,(SLAVE)finalsoc.usb_gpx) 1 0 5 NJ 1300 NJ 1300 NJ 1300 NJ 1300 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)keyvol_3.external_connection,(SLAVE)finalsoc.keyvol_3) 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc INTERCONNECT<net_container>finalsoc</net_container>(SLAVE)i2c_0.csr,(SLAVE)sdram_pll.pll_slave,(SLAVE)leds_pio.s1,(SLAVE)keyvol_3.s1,(SLAVE)keyvol_2.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)usb_irq.s1,(SLAVE)usb_rst.s1,(SLAVE)keyvol_1.s1,(SLAVE)keycode.s1,(SLAVE)key.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)usb_gpx.s1,(SLAVE)timer_0.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)sdram.s1,(SLAVE)hex_digits_pio.s1,(SLAVE)keyvol_0.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)spi_0.spi_control_port) 1 1 4 380 640 800 700 NJ 700 1530
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)keyvol_2.external_connection,(SLAVE)finalsoc.keyvol_2) 1 0 3 NJ 580 NJ 580 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.spi0,(SLAVE)spi_0.external) 1 0 5 NJ 370 NJ 370 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)keyvol_1.external_connection,(SLAVE)finalsoc.keyvol_1) 1 0 3 NJ 520 NJ 520 NJ
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)usb_irq.external_connection,(SLAVE)finalsoc.usb_irq) 1 0 5 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ
+preplace netloc INTERCONNECT<net_container>finalsoc</net_container>(SLAVE)keyvol_0.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)usb_rst.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)hex_digits_pio.reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)keyvol_1.reset,(MASTER)clk_0.clk_reset,(SLAVE)key.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)usb_irq.reset,(SLAVE)leds_pio.reset,(SLAVE)usb_gpx.reset,(SLAVE)i2c_0.reset_sink,(SLAVE)timer_0.reset,(SLAVE)keycode.reset,(SLAVE)keyvol_2.reset,(SLAVE)keyvol_3.reset,(SLAVE)sdram_pll.inclk_interface_reset,(SLAVE)sdram.reset,(SLAVE)spi_0.reset) 1 1 4 380 860 840 860 NJ 860 1510
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)key.external_connection,(SLAVE)finalsoc.key_external_connection) 1 0 5 NJ 1100 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc POINT_TO_POINT<net_container>finalsoc</net_container>(MASTER)sdram_pll.c0,(SLAVE)sdram.clk) 1 4 2 1550 30 2040
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.hex_digits,(SLAVE)hex_digits_pio.external_connection) 1 0 5 NJ 920 NJ 920 NJ 920 NJ 920 NJ
+preplace netloc FAN_OUT<net_container>finalsoc</net_container>(SLAVE)spi_0.irq,(SLAVE)jtag_uart_0.irq,(SLAVE)timer_0.irq,(SLAVE)i2c_0.interrupt_sender,(MASTER)nios2_gen2_0.irq) 1 2 3 780 840 NJ 840 1490
+preplace netloc EXPORT<net_container>finalsoc</net_container>(MASTER)sdram_pll.c1,(MASTER)finalsoc.sdram_clk) 1 5 1 N
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)finalsoc.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>finalsoc</net_container>(SLAVE)keyvol_3.clk,(SLAVE)key.clk,(SLAVE)spi_0.clk,(MASTER)clk_0.clk,(SLAVE)keyvol_2.clk,(SLAVE)hex_digits_pio.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)keyvol_0.clk,(SLAVE)keycode.clk,(SLAVE)timer_0.clk,(SLAVE)i2c_0.clock,(SLAVE)usb_gpx.clk,(SLAVE)sdram_pll.inclk_interface,(SLAVE)usb_irq.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)keyvol_1.clk,(SLAVE)leds_pio.clk,(SLAVE)usb_rst.clk) 1 1 4 360 600 880 720 NJ 720 1470
+preplace netloc EXPORT<net_container>finalsoc</net_container>(SLAVE)sdram.wire,(SLAVE)finalsoc.sdram_wire) 1 0 5 NJ 190 NJ 190 NJ 190 NJ 190 NJ
+levelinfo -pg 1 0 150 2150
+levelinfo -hier finalsoc 160 190 540 1030 1450 1850 2060

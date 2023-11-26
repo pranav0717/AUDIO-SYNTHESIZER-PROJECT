@@ -1,0 +1,24 @@
+module RootSquareSumCalculator(
+	input [31:0]
+);
+
+real a = waveform[i];
+real b = waveform[i+1];
+real c = waveform[i+2];
+real d = waveform[i+3];
+
+real sum_sq = a*a + b*b + c*c + d*d;
+real max_val = (a > b) ? a : b;
+max_val = (max_val > c) ? max_val : c;
+max_val = (max_val > d) ? max_val : d;
+
+real pythagorean;
+
+if (max_val == 0) {
+  pythagorean = 0;
+} else {
+  pythagorean = ((sum_sq / (max_val * max_val)) + 1) * max_val;
+}
+
+
+endmodule
